@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'core/theme/app_theme.dart';
-import 'screens/initial_screen.dart';
+import 'screens/auth_gate.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +23,7 @@ class VaquinhaBetApp extends StatelessWidget {
       title: 'Vaquinha Bet',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme, // Using dark theme as the primary identity
-      home: const InitialScreen(),
+      home: const AuthGate(),
     );
   }
 }
